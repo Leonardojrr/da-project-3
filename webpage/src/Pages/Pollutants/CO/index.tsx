@@ -76,7 +76,7 @@ const CO = (Props: PollutantProps) => {
         state: selectedState,
       };
   
-      client.get_pollutants_info(search, PollutantType.O3).then((data) => {
+      client.get_pollutants_info(search, PollutantType.CO).then((data) => {
         let heatdata: [number, number, number][] = [];
         let displayRecords: PollutantInfo[] = []
   

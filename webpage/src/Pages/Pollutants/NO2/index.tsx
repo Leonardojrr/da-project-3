@@ -77,7 +77,7 @@ const NO2 = (Props: PollutantProps) => {
         state: selectedState,
       };
   
- client.get_pollutants_info(search, PollutantType.O3).then((data) => {
+ client.get_pollutants_info(search, PollutantType.NO2).then((data) => {
        let heatdata: [number, number, number][] = [];
        let displayRecords: PollutantInfo[] = []
  

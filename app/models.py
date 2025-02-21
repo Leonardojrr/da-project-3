@@ -55,13 +55,6 @@ class Location(db.Model):
 
     @classmethod
     def get_states(self):
-        # print("="*80)
-        # print("MODELS LINE 57")
-        # print(os.getcwd())
-        # print("="*80)
-        # sleep(30)
-        # print("="*80)
-
         locations = self.query.all()
 
         locations_df = pd.DataFrame([{"id": location.id, "state": location.state} for location in locations])
