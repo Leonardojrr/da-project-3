@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, NavLink } from "react-router-dom";
-import { HttpClient } from "../../services/HttpClient";
+import { HttpClient } from "@/services/HttpClient";
 
 //Pages
 import { CO } from "./CO";
 import { SO2 } from "./SO2";
 import { O3 } from "./O3";
 import { NO2 } from "./NO2";
-import AqiTable from "../../Components/AqiTable";
+import { AqiTable } from "@/Components";
 
 export interface PollutantProps {
   states: { id: number; state: String }[];

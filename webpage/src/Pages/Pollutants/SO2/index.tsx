@@ -1,14 +1,18 @@
 import { useState, useEffect } from "react";
-import Heatmap from "../../../Components/HeatMap";
-import LineChart from "../../../Components/LineChart";
+import { PollutantProps} from "..";
+
 import {
   HttpClient,
   SearchParams,
   PollutantType,
   PollutantInfo,
-} from "../../../services/HttpClient";
-import { PollutantProps} from "..";
-import BarChart from "../../../Components/BarChart";
+} from "@/services/HttpClient";
+
+import {
+  BarChart,
+  LineChart,
+  Heatmap
+} from "@/Components";
 
 const displayRecordTable =(pollutantHeatData:any)=>{return (<>
   <h2 className="text-2xl font-semibold text-3xl text-gray-800 mb-7 mt-7 text-center">

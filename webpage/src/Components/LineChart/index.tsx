@@ -23,8 +23,7 @@ interface Props{
   aqi_data:AQIData[],
 }
 
-const AvgAQILineChart = ({aqi_data}:Props) => {
-
+const LineChart = ({aqi_data}:Props) => {
   
   const chartData = {
     labels: aqi_data.map((d) => `${d.year}`),
@@ -94,4 +93,4 @@ const AvgAQILineChart = ({aqi_data}:Props) => {
   );
 };
 
-export default AvgAQILineChart;
+export default LineChart;

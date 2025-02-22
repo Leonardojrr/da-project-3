@@ -1,6 +1,6 @@
-import chaseImage from "../../assets/Images/Chase.jpg"
-import yoshiImage from "../../assets/Images/Yoshi.jpg"
-import kritiImage from "../../assets/Images/Kriti.jpg"
+import chaseImage from "@/assets/Images/Chase.jpg"
+import yoshiImage from "@/assets/Images/Yoshi.jpg"
+import kritiImage from "@/assets/Images/Kriti.jpg"
 
 
 // Team Member Component

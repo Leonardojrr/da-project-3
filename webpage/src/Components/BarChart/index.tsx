@@ -23,7 +23,7 @@ interface Props{
     aqi_data: AQIData[] 
 }
 
-const AQIBarChart = ({aqi_data}:Props) => {
+const BarChart = ({aqi_data}:Props) => {
     
   const chartData: ChartData<"bar"> = {
     labels: aqi_data.map((d) => d.city), // Cities on Y-axis
@@ -76,4 +76,4 @@ const AQIBarChart = ({aqi_data}:Props) => {
   );
 };
 
-export default AQIBarChart;
+export default BarChart;

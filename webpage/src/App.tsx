@@ -1,6 +1,6 @@
 import { Pollutants, Home, About,Source} from "./Pages";
 import { Route, Routes } from "react-router-dom";
-import SlideMenu from "./Components/SlideMenu";
+import { SlideMenu } from "./Components";
 
 export default function LandingPage() {
   return (
