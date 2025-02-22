@@ -3,8 +3,7 @@ import { Menu, X, ChevronRight, ChevronDown } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 const SlideMenu = () => {
-  const [isOpen, setIsOpen] = useState(true);
-
+  const [isOpen, setIsOpen] = useState(false);
   const [isPollutantsOpen, setIsPollutantsOpen] = useState(false);
 
   const togglePollutantsMenu = () => {
